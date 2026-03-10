@@ -16,6 +16,8 @@
             <includes>
                 <include>streamers.txt</include>
                 <include>output.txt</include>
+                <include>logs/</include>
+                <include>README.md</include>
             </includes>
         </fileSet>
     </fileSets>
