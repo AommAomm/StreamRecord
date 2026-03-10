@@ -1,0 +1,3 @@
+/home/test/lab/StreamRecord/recordings/
+^^ your file path should go on the first line and end with a slash ^^
+Example "/home/dork/Streamers/"
