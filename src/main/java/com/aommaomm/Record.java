@@ -41,7 +41,7 @@ public class Record extends Thread {
                 JsonNode nodeData = objmapper.readTree(jsonOutput);
                 streamTitle = nodeData.path("metadata").path("title").asText("");
 
-                if (!streamTitle.isEmpty() && streamTitle.toLowerCase().contains(unarchived.toLowerCase())){
+                if (!streamTitle.isEmpty()){
                     logger.info("Found media stream for: {} (Title: {})", url, streamTitle);
                     beginRecord();
                 } else {
