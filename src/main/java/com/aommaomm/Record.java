@@ -14,6 +14,8 @@ public class Record extends Thread {
     protected String streamerName;
     protected String streamTitle;
 
+    static final String unarchived = "unarchived";
+
     private static final Logger logger = LoggerFactory.getLogger(Record.class);
 
     private static final ObjectMapper objmapper = new ObjectMapper();
@@ -39,7 +41,7 @@ public class Record extends Thread {
                 JsonNode nodeData = objmapper.readTree(jsonOutput);
                 streamTitle = nodeData.path("metadata").path("title").asText("");
 
-                if (!streamTitle.isEmpty()){
+                if (!streamTitle.isEmpty() && streamTitle.toLowerCase().contains(unarchived.toLowerCase())){
                     logger.info("Found media stream for: {} (Title: {})", url, streamTitle);
                     beginRecord();
                 } else {
