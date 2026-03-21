@@ -92,9 +92,9 @@ public class Record extends Thread {
 
             logger.info("Starting record for {} -> {}", streamerName, destination.getAbsolutePath());
             ProcessBuilder pb = new ProcessBuilder("streamlink", url, "best", "-o", destination.getAbsolutePath());
-            pb.inheritIO(); // inheritio is fine in thie method
+            pb.inheritIO();
             Process p = pb.start();
-            p.waitFor(); // jvm hangs here until stream finishes
+            p.waitFor(); // jvm hangs should hang
 
             logger.info("Recording finished for {}", streamerName);
 
