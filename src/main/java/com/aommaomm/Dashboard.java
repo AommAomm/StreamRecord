@@ -6,31 +6,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Dashboard {
-    static String outputPath = "./";
+    static String outputPath = "./streams/";
     static List<Record> bots = new ArrayList<>();
 
     public static void main(String[] args) {
         new File("logs").mkdirs(); 
-        
-        checkOutputPath();
         makeBots();
         startBots();
-    }
-
-    public static void checkOutputPath(){
-        File configFile = new File("output.txt");
-        if (configFile.exists()){
-            try (Scanner scn = new Scanner(configFile)) {
-                if (scn.hasNextLine()) {
-                    String readPath = scn.nextLine().trim();
-                    if (!readPath.isEmpty()) {
-                        outputPath = readPath;
-                    }
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
     }
 
     protected static void makeBots(){

@@ -1,1 +1,6 @@
-
+2026-03-23 02:10:41.153 [Thread-1] ERROR com.aommaomm.Record - IO Error for https://www.youtube.com/@JellyHoshiumi/live: Cannot run program "streamlink": Exec failed, error: 2 (No such file or directory) 
+2026-03-23 02:10:41.153 [Thread-0] ERROR com.aommaomm.Record - IO Error for https://www.youtube.com/@TokoyamiTowa/live: Cannot run program "streamlink": Exec failed, error: 2 (No such file or directory) 
+2026-03-23 02:10:41.153 [Thread-3] ERROR com.aommaomm.Record - IO Error for https://www.twitch.tv/hiy_nanoda: Cannot run program "streamlink": Exec failed, error: 2 (No such file or directory) 
+2026-03-23 02:10:41.153 [Thread-5] ERROR com.aommaomm.Record - IO Error for https://www.twitch.tv/pamela_emuritto: Cannot run program "streamlink": Exec failed, error: 2 (No such file or directory) 
+2026-03-23 02:10:41.153 [Thread-4] ERROR com.aommaomm.Record - IO Error for https://www.twitch.tv/tenma: Cannot run program "streamlink": Exec failed, error: 2 (No such file or directory) 
+2026-03-23 02:10:41.153 [Thread-2] ERROR com.aommaomm.Record - IO Error for https://www.youtube.com/@ShiroganeNoel/live: Cannot run program "streamlink": Exec failed, error: 2 (No such file or directory) 
