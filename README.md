@@ -1,6 +1,5 @@
 Install Streamlink first. Streamlink is the engine that actually records, StreamRecord just automates it. (https://github.com/streamlink/streamlink)
 
-The first line of "output.txt" should be the output location of your recordings.
 streamers.txt should be a list of who you want to record. One name per line, Youtube tags should start with an @
 
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
